@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+    
+    header {
+        $corDeFundo: rgb(228, 228, 1);
+        background-color: $corDeFundo; 
+        padding: 30px;
+    }
+}
