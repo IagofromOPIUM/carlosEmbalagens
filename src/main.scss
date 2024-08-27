@@ -1,9 +1,9 @@
 * {
+    $corDeFundo: rgb(228, 228, 1);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     
     header {
-        $corDeFundo: rgb(228, 228, 1);
         background-color: $corDeFundo; 
         padding: 30px;
         display: flex;
@@ -23,13 +23,25 @@
     .posheader{
         margin-top: 190px;
         text-align: center;
+        
+    }
+    .produtos{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
     }
    .produto{
     margin: 0;
-    padding-block: 10px;
-    width: 100vw;
+    padding-block: 20px;
+    width: 300px;
     background-color: #0e0c0a;
     color: white;
+   }
+   .footer{
+    display: flex;
+    background-color: $corDeFundo;
+    box-shadow: 0px -1px 10px rgb(0, 0, 0);
+
    }
     
 }
