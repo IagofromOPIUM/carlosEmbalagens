@@ -1,9 +1,35 @@
-body {
+* {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     
     header {
         $corDeFundo: rgb(228, 228, 1);
         background-color: $corDeFundo; 
         padding: 30px;
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 3px 10px rgb(0, 0, 0);
+
+        img{
+            position: fixed;
+            left: 25px;
+        }
+       
     }
+    .posheader{
+        margin-top: 190px;
+        text-align: center;
+    }
+   .produto{
+    margin: 0;
+    padding-block: 10px;
+    width: 100vw;
+    background-color: #0e0c0a;
+    color: white;
+   }
+    
 }
