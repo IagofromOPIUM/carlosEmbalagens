@@ -1,11 +1,12 @@
 * {
-    $corDeFundo: rgb(228, 228, 1);
+    $corDeFundo: rgb(255 255 1);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     
     header {
         background-color: $corDeFundo; 
-        padding: 30px;
+        max-height: 100px;
+        padding-bottom: 5px;
         display: flex;
         position: fixed;
         top: 0;
@@ -13,11 +14,6 @@
         justify-content: center;
         align-items: center;
         box-shadow: 0px 3px 10px rgb(0, 0, 0);
-
-        img{
-            position: fixed;
-            left: 25px;
-        }
        
     }
     .posheader{
@@ -31,19 +27,37 @@
         align-items:center;
     }
    .produto{
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-block: 5px;
+    border-radius: 8.5px;
     padding-block: 20px;
     min-width: 300px;
     width: 50vw;
     background-color: #0e0c0a;
     color: white;
+    transition: 0.1s ease-in-out;
+   }
+   .produto:hover{
+    background-color: $corDeFundo;
+    color: #0e0c0a;
    }
    .footer{
     display: flex;
+    justify-content: space-between;
+    width: 100vw;
     align-items: center;
     background-color: $corDeFundo;
     box-shadow: 0px -1px 10px rgb(0, 0, 0);
+    position: absolute;
+    bottom: 0;
 
+    p{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
    }
+
+   
     
 }
