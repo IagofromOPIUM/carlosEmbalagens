@@ -1,8 +1,12 @@
-* { //para todos os elementos
+ 
+ * { //para todos os elementos
     $corDeFundo: rgb(255 255 1);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
    
+    main{
+      height: 100vh;  
+    }
     header {
         background-color: $corDeFundo; 
         max-height: 100px;
@@ -22,51 +26,46 @@
         text-align: center;
         
     }
-   
-    .produtos{
-        display: flex;
-        flex-direction: column;
-        align-items:center;
-    }
-   
-   .produto{
+   .produtosDeLimpeza{
+    display: flex;
+    margin-top: 50px;
+    flex-flow:row wrap ; 
+    align-items:center;
+    justify-content: center;
+}
+
+    .pdt-l{
     display: flex;
     justify-content: center;
-    margin-block: 5px;
+    margin-block: 15px;
+    margin-inline: 10px;
     border-radius: 8.5px;
     padding-block: 20px;
     min-width: 300px;
-    width: 50vw;
+    min-height: 200px;
+    width: 10vw;
+    height: 10vh;
     background-color: #0e0c0a;
-    color: white;
-    transition: 0.1s ease-in-out;
-   
-   }
-    a{
-        text-decoration: none;
-        color: white;
-    }
-   
+    color: white;   
+}
 
-   .produto:hover{
-    background-color: $corDeFundo;
-    color: #0e0c0a;
-   }
-
-   .footer{
+.footer{
     display: flex;
     justify-content: space-between;
     width: 100vw;
     align-items: center;
     background-color: $corDeFundo;
     box-shadow: 0px -1px 10px rgb(0, 0, 0);
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+   
+   
+    
 
     p{
         margin-left: 20px;
         margin-right: 20px;
     }
    }
-}
 
+
+ }
