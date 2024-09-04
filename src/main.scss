@@ -1,10 +1,11 @@
-* { //para todos os elementos
+* {
+    //para todos os elementos
     $corDeFundo: rgb(255 255 1);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-   
+
     header {
-        background-color: $corDeFundo; 
+        background-color: $corDeFundo;
         max-height: 100px;
         padding-bottom: 5px;
         display: flex;
@@ -14,59 +15,100 @@
         justify-content: center;
         align-items: center;
         box-shadow: 0px 3px 10px rgb(0, 0, 0);
-       
+        z-index: 7;
+
     }
-    
-    .posheader{
+
+    .posheader {
         margin-top: 190px;
         text-align: center;
-        
+
     }
-   
-    .produtos{
+
+    .produtos {
         display: flex;
-        flex-direction: column;
-        align-items:center;
+        flex-direction: row;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 350px;
+
     }
-   
-   .produto{
-    display: flex;
-    justify-content: center;
-    margin-block: 5px;
-    border-radius: 8.5px;
-    padding-block: 20px;
-    min-width: 300px;
-    width: 50vw;
-    background-color: #0e0c0a;
-    color: white;
-    transition: 0.1s ease-in-out;
-   
-   }
-    a{
+    .produto-container {
+        margin-block: 5px;
+        margin-left: 10px;
+        margin-top: 40px;
+        border-radius: 15px;
+        min-width: 300px;
+        width: 300px;
+        height: 300px;
+        color: rgb(255, 255, 255);
+        transition: 0.1s ease-in-out;
+        background-size: cover;
+        box-shadow: 1px 1px 3px 2px inset black;
+    }
+
+    .produto-content {
+        position: relative;
+        border-radius: 15px;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(3px);
+        transition: 100ms backdrop-filter linear;
+    }
+
+    .produto-content:hover {
+        backdrop-filter: none;
+    }
+
+    .produto-content p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:white;
+        font-size: 40px;
+        text-shadow: 
+        -2px -1px 0 black,  
+         2px -1px 0 black,
+        -2px  1px 0 black,
+         2px  1px 0 black;
+       // background: #ccc;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 40% 0%;
+    }
+
+    .produto:hover {
+        transform: scale(1.04);
+    }
+
+    a {
         text-decoration: none;
         color: white;
     }
-   
 
-   .produto:hover{
-    background-color: $corDeFundo;
-    color: #0e0c0a;
-   }
 
-   .footer{
-    display: flex;
-    justify-content: space-between;
-    width: 100vw;
-    align-items: center;
-    background-color: $corDeFundo;
-    box-shadow: 0px -1px 10px rgb(0, 0, 0);
-    position: fixed;
-    bottom: 0;
-
-    p{
-        margin-left: 20px;
-        margin-right: 20px;
+    .produto:hover {
+        background-color: $corDeFundo;
+        color: #0e0c0a;
     }
-   }
-}
 
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        align-items: center;
+        background-color: $corDeFundo;
+        box-shadow: 0px -1px 10px rgb(0, 0, 0);
+        position: fixed;
+        bottom: 0;
+
+        p {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+}
