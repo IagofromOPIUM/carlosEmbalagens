@@ -4,6 +4,11 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 
+    main{
+        position: relative;
+        overflow-x: hidden;
+        min-height: 100vh;
+    }
     header {
         background-color: $corDeFundo;
         max-height: 100px;
@@ -20,7 +25,7 @@
     }
 
     .posheader {
-        margin-top: 190px;
+        margin-top: 150px;
         text-align: center;
 
     }
@@ -72,7 +77,6 @@
          2px -1px 0 black,
         -2px  1px 0 black,
          2px  1px 0 black;
-       // background: #ccc;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -98,17 +102,24 @@
 
     .footer {
         display: flex;
+        flex-flow: row wrap;
         justify-content: space-between;
         width: 100vw;
         align-items: center;
         background-color: $corDeFundo;
         box-shadow: 0px -1px 10px rgb(0, 0, 0);
-        position: fixed;
+        position: absolute;
         bottom: 0;
 
-        p {
-            margin-left: 20px;
-            margin-right: 20px;
+       .contato{
+        margin-left: 20px;
+        padding-top: 30px;
+
+        img{
+            max-width: 70px;
+            max-height: 80px;
+            
         }
+       }
     }
 }
