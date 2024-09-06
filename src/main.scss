@@ -31,7 +31,7 @@
     }
     
     .icons{
-        height: 250px;
+        height: 180px;
         display: flex;
         flex-flow: column;
         position: fixed;
@@ -42,9 +42,13 @@
         
      img{
       
-        max-width: 70px;
-        max-height: 80px;
-     }    
+        max-width: 50px;
+        max-height: 50px;
+        transition: 0.5s;
+     }
+     img:hover {
+        transform: scale(1.05);
+     } 
    }
 
 
@@ -150,4 +154,54 @@
             font-size: 25px;
         }
        }
+    }
+
+
+    .produtosDeLimpeza {
+        display: flex;
+        margin-top: 20px;
+        padding-bottom: 300px;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .produto {
+        margin-block: 15px;
+        margin-inline: 10px;
+        border-radius: 20px;
+        width: 400px;
+        background-color: #0e0c0a;
+        color: white;
+        transition: 0.5s;
+
+        figure {
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        figcaption {
+            margin-left: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+
+        .product-img {
+            min-height: 200px;
+            min-width: 200px;
+            max-height: 200px;
+            max-width: 200px;
+
+        }
+
+
+    }
+
+    .produto:hover {
+        transform: scale(1.07);
     }
